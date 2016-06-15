@@ -1,0 +1,8 @@
+
+.v-thumb img{
+    width: 250px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("/index/img/2013/video/video_default_200x110.png");
+}
