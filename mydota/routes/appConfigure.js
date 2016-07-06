@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
     if (name == 'lol') {
       url = 'http://www.zhanqi.tv/api/static/game.lives/6/30-1.json';
     }
-    var dic = {'zqlist':url,'zqlive':'http://dlhls.cdn.zhanqi.tv/zqlive/','videojs':'function getVideoM3u8(type){ return BuildVideoInfo.m3u8src(type); }'};
+    var dic = {'zqlist':url,'zqlive':'http://dlhls.cdn.zhanqi.tv/zqlive/','videojs':'function getVideoM3u8(type){\n    return BuildVideoInfo.m3u8src(type);\n}'};
     res.send({'code':0,data:dic});
 	}else{
 		res.send({'code':-1,message:'丢失参数'});
